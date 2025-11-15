@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
-"""
-AI Commit Assistant CLI (Gemini Edition)
-- Generates commit messages from staged changes.
-- Supports conventional/emoji/plain styles.
-- Offline heuristic summarizer + Gemini LLM summarizer.
 
-Usage:
-  ./ai_commit.py generate -s conventional --dry-run
-  ./ai_commit.py commit -s emoji
-  ./ai_commit.py --set-gemini-key <YOUR_KEY>
-"""
+# AI Commit Assistant CLI (Gemini Edition)
+# - Generates commit messages from staged changes.
+# - Supports conventional/emoji/plain styles.
+# - Offline heuristic summarizer + Gemini LLM summarizer.
+
+# Usage:
+#   ./ai_commit.py --set-gemini-key <YOUR_KEY>
+#   ./ai_commit.py --show-gemini-key
+#   ./ai_commit.py generate -s conventional --dry-run
+#   ./ai_commit.py commit -s emoji
+
 
 import os
 import sys
@@ -125,6 +126,7 @@ def generate_message(style: str) -> str:
 def main():
     parser = argparse.ArgumentParser(description="AI Commit Assistant CLI (Gemini)")
     parser.add_argument("--set-gemini-key", help="Set Gemini API key in environment")
+    parser.add_argument("--show-gemini-key", action="store_true", help="Show if Gemini API key is set")
     sub = parser.add_subparsers(dest="cmd")
 
     p_gen = sub.add_parser("generate", help="Generate a commit message")
@@ -141,6 +143,16 @@ def main():
     if args.set_gemini_key:
         os.environ["GEMINI_API_KEY"] = args.set_gemini_key
         print("Gemini API key set in environment for this session.")
+        sys.exit(0)
+
+    # Handle showing Gemini key
+    if args.show_gemini_key:
+        key = os.getenv("GEMINI_API_KEY")
+        if key:
+            masked = key[:4] + "..." + key[-4:]
+            print(f"GEMINI_API_KEY is set: {masked}")
+        else:
+            print("No Gemini API key set.")
         sys.exit(0)
 
     if args.cmd not in ("generate","commit"):
