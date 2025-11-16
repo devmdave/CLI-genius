@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""
-CodeGen CLI - AI Powered Code Snippet Generator
-Uses Hugging Face free Inference API to generate code from prompts.
-
-Usage:
-    python codegen_cli.py "Write a Python function to reverse a string"
-"""
-
 import os
 from huggingface_hub import InferenceClient
 
