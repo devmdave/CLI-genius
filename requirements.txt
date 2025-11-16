@@ -1,0 +1,13 @@
+# Core dependencies
+requests==2.31.0          # For Hugging Face API calls
+google-generativeai==0.3.2  # Gemini API SDK
+
+# Utilities
+readline                  # For interactive console input (Linux/macOS; on Windows use pyreadline3)
+colorama==0.4.6           # For colorized console output (cross-platform)
+
+# Optional (used in commit assistant)
+argparse                  # Standard library (no install needed, included in Python)
+subprocess                # Standard library (no install needed)
+json                      # Standard library (no install needed)
+datetime                  # Standard library (no install needed)
