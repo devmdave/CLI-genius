@@ -9,6 +9,8 @@ Usage:
 
 import os
 from huggingface_hub import InferenceClient
+from extractor import extract_code
+
 
 
 client = InferenceClient(
@@ -32,4 +34,7 @@ completion = client.chat.completions.create(
     
 )
 
-print(completion.choices[0].message.content)
+# print(completion.choices[0].message.content)
+# print ("----- Extracted Code -----")
+code_snippet = extract_code(completion.choices[0].message.content)  
+print(code_snippet)
