@@ -13,6 +13,9 @@ import os
 import subprocess
 from huggingface_hub import InferenceClient
 from extractor import extract_code
+from extractor import save_code_interactive
+from extractor import generate_filename_from_prompt
+from extractor import detect_extension
 
 
 def main():
@@ -54,9 +57,11 @@ def main():
                     }
                 ],
             )
-
+            filename = generate_filename_from_prompt(args.prompt, detect_extension(args.prompt))
             code_snippet = extract_code(completion.choices[0].message.content)
             print(code_snippet)
+            save_code_interactive(code_snippet, filename)
+
         except Exception as e:
             print(f"Error generating code: {e}")
     else:
