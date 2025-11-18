@@ -1,228 +1,169 @@
+██████████████████████████████████████████████████████████████████████████
+██████╗  ██████╗ ██╗     ██╗      ██████╗ ███████╗███╗   ██╗██╗██╗   ██╗██╗
+██╔══██╗██╔═══██╗██║     ██║     ██╔═══██╗██╔════╝████╗  ██║██║██║   ██║██║
+██████╔╝██║   ██║██║     ██║     ██║   ██║█████╗  ██╔██╗ ██║██║██║   ██║██║
+██╔══██╗██║   ██║██║     ██║     ██║   ██║██╔══╝  ██║╚██╗██║██║╚██╗ ██╔╝╚═╝
+██║  ██║╚██████╔╝███████╗███████╗╚██████╔╝███████╗██║ ╚████║██║ ╚████╔╝ ██╗
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝  ╚═══╝  ╚═╝
+██████████████████████████████████████████████████████████████████████████
 
-# 🚀 **Cli-Genius** 🚀  
-### *Your AI-Powered Command-Line Genius for Developers*  
-> Unleash ChatGPT-like intelligence in your terminal! Generate code, debug errors, refactor projects, and automate workflows with blazing speed. Perfect for developers, embedded engineers, and VLSI wizards.  
+# ✨ **Cli-Genius** — Your AI-Powered Terminal Companion 🤖⚡  
+> _ChatGPT-level intelligence, right inside your command line._
 
----
-
-## 🛡️ **Badges & Stats**  
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)  
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)  
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/cli-genius?style=social)](https://github.com/yourusername/cli-genius)  
-[![Downloads](https://img.shields.io/pypi/dm/cli-genius)](https://pypi.org/project/cli-genius/)  
-[![Build Status](https://img.shields.io/github/actions/workflow/status/yourusername/cli-genius/ci.yml)](https://github.com/yourusername/cli-genius/actions)  
-[![Code Quality](https://img.shields.io/codefactor/grade/github/yourusername/cli-genius)](https://www.codefactor.io/repository/github/yourusername/cli-genius)  
-
----
-
-## 🌟 **Overview**  
-```
-   _____ _ _     _____           _            
-  / ____(_) |   / ____|         (_)           
- | |     _| | _| |  __ _ __ ___  _ _ __   ___  
- | |    | | |/ / | |_ | '_ ` _ \| | '_ \ / _ \ 
- | |____| |   <| |__| | | | | | | | | | |  __/ 
-  \_____|_|_|\_\\_____|_| |_| |_|_|_| |_|\___| 
-                                              
-```
-**Cli-Genius** is your ultimate AI-driven CLI companion, transforming your terminal into a powerhouse of productivity. Built with Python, it integrates seamlessly into your development workflow, offering ChatGPT-level intelligence for coding, debugging, and automation. Whether you're a web dev, embedded systems engineer, or VLSI designer, Cli-Genius adapts to your needs—fast, modular, and extensible.  
-
-✨ **Key Highlights:**  
-- 🤖 **AI-Powered Assistance**: Generate, explain, and debug code effortlessly.  
-- ⚡ **Lightning Fast**: Optimized for speed and low latency.  
-- 🛠️ **Modular Design**: Easily extend with plugins and custom integrations.  
-- 🎯 **Developer-Focused**: Tailored for productivity in modern dev environments.  
-
-Dive in and let Cli-Genius supercharge your terminal experience!  
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/CLI-Tool-green?style=for-the-badge" />
+  <img src="https://img.shields.io/github/license/openai/openai?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/AI-Powered-magenta?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/✨-Developer Productivity-ff69b4?style=for-the-badge" />
+</p>
 
 ---
 
-## 🔥 **Features**  
-Cli-Genius packs a punch with features designed for developers at every level. Here's the full arsenal:  
+## 🎨 **Overview**
+Welcome to **Cli-Genius**, the all-in-one **AI-assisted command-line toolkit** that transforms your terminal into an intelligent development cockpit.  
+Built in **Python**, crafted for **speed**, designed for **modularity**, and powered by **AI**, this CLI assistant elevates your productivity with natural-language superpowers.
 
-### 💻 **Core AI Capabilities**  
-- 🧠 **Code Generation**: Instantly create functions, classes, or entire modules in any language.  
-- 🔍 **Code Explanation**: Break down complex code snippets with step-by-step insights.  
-- 🐛 **Debugging Wizard**: Analyze errors, suggest fixes, and simulate debugging sessions.  
-- 🔄 **Refactoring Tools**: Optimize and restructure code for better performance.  
-- 📊 **Project Analysis**: Scan repositories for vulnerabilities, dependencies, and improvements.  
-- 📝 **Content Summarization**: Condense docs, articles, or codebases into key takeaways.  
-- 🤖 **Workflow Automation**: Script repetitive tasks with AI-driven commands.  
-
-### 🔧 **Specialized for Engineers**  
-- 🖥️ **Verilog/SystemVerilog Module Generation**: Design HDL modules with AI precision.  
-- 🧪 **Testbench Creation**: Auto-generate comprehensive testbenches for simulation.  
-- 📋 **Datasheet Summarization**: Extract and summarize specs from technical datasheets.  
-
-### 🚀 **Productivity Boosters**  
-- 📁 **Project Initialization**: Scaffold new projects with templates and best practices.  
-- 🔎 **Semantic Search**: Query your codebase with natural language for instant results.  
-- 💬 **Smart Commit Messages**: Generate meaningful git commits from changes.  
-- 📖 **Documentation Generation**: Auto-create READMEs, API docs, and guides.  
-- 🐧 **Linux Command Explanation**: Decode complex shell commands with plain-English breakdowns.  
+Whether you're generating code, debugging errors, summarizing documents, analyzing projects, or creating smart commit messages—Cli-Genius is your ultimate developer companion.
 
 ---
 
-## 🏗️ **Architecture Diagram**  
-Behold the sleek, modular architecture of Cli-Genius—visualized in ASCII glory!  
+## 🚀 **Features at a Glance**
 
-```
-   +-------------------+     +-------------------+     +-------------------+
-   |   CLI Interface   | --> |   AI Engine       | --> |   Output Renderer |
-   |   (User Commands) |     |   (GPT Integration)|     |   (Formatted Results)|
-   +-------------------+     +-------------------+     +-------------------+
-            |                           |                           |
-            v                           v                           v
-   +-------------------+     +-------------------+     +-------------------+
-   |   Plugin System   |     |   Data Processor  |     |   Cache Manager   |
-   |   (Extensibility) |     |   (Code Analysis) |     |   (Performance)   |
-   +-------------------+     +-------------------+     +-------------------+
-            |                           |                           |
-            v                           v                           v
-   +-------------------+     +-------------------+     +-------------------+
-   |   Config Manager  |     |   API Connectors  |     |   Logging System  |
-   |   (Settings)      |     |   (External APIs) |     |   (Debugging)     |
-   +-------------------+     +-------------------+     +-------------------+
-```
-*This diagram illustrates the flow: User inputs via CLI, processed by AI, rendered with plugins for a seamless experience.*  
+🧠  AI Chat Assistant — Ask anything, get ChatGPT-like responses
+🛠️  Code Generation — Create modules, functions, or files instantly
+🔍  Semantic Search — Understands context across your entire project
+🔥  Debugger — Paste errors, get fixes
+📚  Code Explanation — Breaks down complex logic in seconds
+📝  Smart Documentation — Auto-generate docstrings, READMEs & usage guides
+📦  Project Initialization — Spin up complete project structures
+⚙️  File Refactoring — Modernize & clean up existing code
+🖥️  Linux Command Explainer — “What does this command do?” → Answered
+🧾  Smart Git Commit Generator — Meaningful, AI-curated commit messages
+⚡  Developer Workflow Automation — Git, testing, analysis & more
 
 ---
 
-## 📦 **Installation**  
-Get Cli-Genius up and running in minutes! Follow these steps:  
+## 🧩 **Graphical Architecture Diagram**
 
-### 🐍 **Prerequisites**  
-- Python 3.8+  
-- pip (Python package manager)  
-- An OpenAI API key (for AI features)  
+┌──────────────────────────┐
+                      │      User Terminal       │
+                      └──────────────┬───────────┘
+                                     │
+                                     ▼
+                      ┌──────────────────────────┐
+                      │      Cli-Genius CLI      │
+                      │   (Command Dispatcher)   │
+                      └──────────────┬───────────┘
+                                     │
+    ┌────────────────────────────────┼────────────────────────────────┐
+    ▼                                ▼                                ▼
 
-### 🚀 **Quick Install**  
-```bash
-# Clone the repo
-git clone https://github.com/yourusername/cli-genius.git
-cd cli-genius
+┌────────────────┐            ┌──────────────────┐            ┌─────────────────┐ │ AI Engine      │            │ Module Handlers  │            │ Utility Layer   │ │ (LLM Wrapper)  │            │ (Code, Docs, AI) │            │ (Search, Shell) │ └───────┬────────┘            └─────────┬────────┘            └────────┬────────┘ │                                 │                              │ ▼                                 ▼                              ▼ ┌───────────────┐               ┌─────────────────┐             ┌─────────────────┐ │ Model APIs     │               │ Project Scanner │             │ Semantic Index  │ │ (Local/Remote) │               │ & Analyzer      │             │ & Database      │ └───────────────┘               └─────────────────┘             └─────────────────┘
 
-# Install dependencies
+---
+
+## 📥 **Installation**
+
+###############################################
+
+🔧 Installation — Python 3.10+ required!
+
+###############################################
+
+1️⃣ Clone the repository
+
+git clone https://github.com/YOUR_USERNAME/Cli-Genius.git
+
+2️⃣ Navigate inside
+
+cd Cli-Genius
+
+3️⃣ Install dependencies
+
 pip install -r requirements.txt
 
-# Run setup
-python setup.py install
+4️⃣ Run the CLI
 
-# Verify installation
-cli-genius --version
-```
-*Boom! You're ready to genius-ify your terminal.*  
-
-### 🐳 **Docker Option** (for isolated environments)  
-```bash
-docker pull yourusername/cli-genius:latest
-docker run -it yourusername/cli-genius
-```
-*Containerized and ready to roll!*  
+python cli_genius.py
 
 ---
 
-## 🎮 **Usage Examples**  
-See Cli-Genius in action with these decorated examples. Each command is a spark of AI magic!  
+## 🧪 **Usage Examples**
 
-### ✨ **Generate Code**  
+### 💬 **Chat with AI**
 ```bash
-cli-genius generate --lang python --task "write a function to reverse a string"
-```
-*Output: A polished Python function, ready to copy-paste.*  
+cli-genius chat "Explain the observer pattern with examples"
 
-### 🐛 **Debug an Error**  
-```bash
-cli-genius debug --code "print('Hello' + 5)" --lang python
-```
-*AI Response: "TypeError! Concatenating str and int. Fix: print('Hello' + str(5))"*  
+🛠️ Generate Code
 
-### 🔧 **Create a Verilog Module**  
-```bash
-cli-genius vlsi --generate module --name adder --inputs a,b --output sum
-```
-*Generates a full Verilog adder module with comments.*  
+cli-genius generate --file utils.py --feature "function to clean CSV data"
 
-### 📝 **Smart Commit**  
-```bash
-cli-genius commit --changes "added error handling"
-```
-*Suggested Commit: "feat: implement robust error handling for API calls"*  
+🧐 Explain Code
 
-*Pro Tip: Use `--verbose` for detailed AI explanations!*  
+cli-genius explain --file main.py
+
+🚨 Fix an Error Traceback
+
+cli-genius debug --error "ValueError: invalid literal for int()"
+
+📚 Create Documentation
+
+cli-genius docs --module authentication
+
 
 ---
 
-## ⚙️ **Configuration Guide**  
-Customize Cli-Genius to fit your workflow like a glove.  
+⚙️ Configuration
 
-### 📄 **Config File**  
-Edit `~/.cli-genius/config.yaml`:  
-```yaml
-api_key: "your-openai-api-key"
-model: "gpt-4"
-theme: "dark"
-plugins:
-  - vlsi
-  - debug
-```
-*Save and restart for changes to take effect.*  
+Create a config file to define your API keys, preferences, model endpoints, and behavior.
 
-### 🔑 **Environment Variables**  
-```bash
-export CLI_GENIUS_API_KEY="your-key"
-export CLI_GENIUS_MODEL="gpt-3.5-turbo"
-```
-*Secure and flexible configuration options.*  
+~/.cligenius/config.yaml
+
+api_key: "YOUR_API_KEY"
+model: "gpt-4.1"
+theme: "modern"
+max_tokens: 8000
+temperature: 0.5
+
 
 ---
 
-## 🗺️ **Roadmap**  
-Our vision for Cli-Genius is expansive! Here's what's cooking:  
+🗺️ Roadmap
 
-- ✅ **Core AI Integration** (Completed)  
-- ✅ **VLSI/Embedded Support** (Completed)  
-- 🔄 **Multi-Language Support** (In Progress) – Add Rust, Go, and more!  
-- 🚀 **Plugin Marketplace** (Planned) – Community-driven extensions.  
-- 🌐 **Web UI Companion** (Upcoming) – Browser-based interface.  
-- 🤝 **Team Collaboration** (Future) – Shared AI sessions.  
-- 🔒 **Offline Mode** (Vision) – Local AI models for privacy.  
+🟣  Add plugin ecosystem  
+🟢  Support local LLMs (Ollama, llama.cpp)  
+🔵  Add project-wide refactoring framework  
+🟡  Interactive TUI mode  
+🟠  Auto-fix + auto-test pipeline  
+🔴  Cloud sync + team workspace
 
-*Contribute ideas via [Issues](https://github.com/yourusername/cli-genius/issues)!*  
 
 ---
 
-## 🤝 **Contributing**  
-Love Cli-Genius? Help us make it even better!  
+🤝 Contributing
 
-### 📋 **How to Contribute**  
-1. Fork the repo 🍴  
-2. Create a feature branch: `git checkout -b feature/amazing-idea`  
-3. Commit changes: `git commit -m "Add amazing feature"`  
-4. Push: `git push origin feature/amazing-idea`  
-5. Open a PR 🚀  
+Pull requests, feature suggestions, and issue reports are warmly welcomed!
+Before contributing, please open a discussion or issue describing your change.
 
-### 🧪 **Testing**  
-```bash
-pytest tests/
-```
-*We welcome bug reports, feature requests, and code contributions!*  
 
 ---
 
-## 📜 **License**  
-Cli-Genius is licensed under the MIT License. See [LICENSE](LICENSE) for details.  
+📄 License
 
-*Free to use, modify, and distribute—open-source magic!*  
+Licensed under the MIT License.
+Feel free to use, modify, and build upon Cli-Genius.
 
----
-
-## ⭐ **Star the Repo!** ⭐  
-If Cli-Genius sparks joy in your dev life, give it a star! 🌟  
-[![GitHub Stars](https://img.shields.io/github/stars/yourusername/cli-genius?style=for-the-badge)](https://github.com/yourusername/cli-genius)  
-
-*Your support fuels our development. Thanks for being awesome!*  
 
 ---
-*Made with ❤️ by the Cli-Genius Team. Empowering developers, one command at a time.*  
-```
+
+⭐ If you like Cli-Genius, Please Star the Repo!
+
+███████╗████████╗ █████╗ ██████╗     ███████╗████████╗ █████╗ ██████╗ 
+██╔════╝╚══██╔══╝██╔══██╗██╔══██╗    ██╔════╝╚══██╔══╝██╔══██╗██╔══██╗
+███████╗   ██║   ███████║██████╔╝    ███████╗   ██║   ███████║██████╔╝
+╚════██║   ██║   ██╔══██║██╔══██╗    ╚════██║   ██║   ██╔══██║██╔══██╗
+███████║   ██║   ██║  ██║██║  ██║    ███████║   ██║   ██║  ██║██║  ██║
+╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝    ╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝
+
+             ⭐⭐⭐  Your star keeps this project alive!  ⭐⭐⭐
