@@ -1,159 +1,65 @@
-```markdown
-# Cli-Genius - Your AI-Powered Terminal Superpower
-
-**ChatGPT-level intelligence directly in your terminal — generate code, debug, refactor, explain commands, and design Verilog modules without ever leaving the CLI.**
-
-[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue?logo=python&logoColor=white)](https://python.org)
-[![PyPI](https://img.shields.io/pypi/v/cli-genius?color=success)](https://pypi.org/project/cli-genius/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Stars](https://img.shields.io/github/stars/yourusername/cli-genius?style=social)](https://github.com/yourusername/cli-genius)
-[![Downloads](https://img.shields.io/pypi/dm/cli-genius)](https://pypistats.org/packages/cli-genius)
-[![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)](CONTRIBUTING.md)
-
-https://raw.githubusercontent.com/yourusername/cli-genius/main/assets/demo.gif
-
-## Overview
-
-**Cli-Genius** is a fast, modular, and extensible AI-powered command-line assistant that brings the full power of modern LLMs (OpenAI, Anthropic, Groq, Ollama, etc.) directly into your terminal.
-
-Designed for developers who live in the shell, it helps you write, understand, debug, document, and ship code faster — with special superpowers for embedded systems and VLSI engineers.
-
-## Features
-
-### General Development
-- Generate & explain code in any language
-- Refactor entire files or selected snippets
-- Smart git commit message generation
-- Project scaffolding & initialization
-- Semantic search across your codebase
-- Automatic documentation generation
-
-### Debugging & Analysis
-- Explain tracebacks and error messages instantly
-- Root-cause analysis with suggested fixes
-- Project structure & dependency analysis
-- Performance bottleneck suggestions
-
-### Documentation & Summarization
-- Summarize PDFs, research papers, and datasheets
-- Generate beautiful Markdown/HTML documentation
-- Auto-create changelogs from git history
-
-### Embedded Systems & VLSI
-- Generate Verilog/SystemVerilog modules from natural language specs
-- Auto-create UVM testbenches
-- Timing constraint (SDC) generation
-- Datasheet to register map extraction
-- RTL linting and best-practice suggestions
-
-### Shell & DevOps
-- Explain any Linux command (even the most obscure ones)
-- Generate complex bash/zsh/fish scripts
-- Docker, Kubernetes, and CI/CD manifest generation
-- One-liner to pipeline conversion
-
-## Architecture
-
-```
-cli-genius/
-├── cli_genius/
-│   ├── core/              # Prompt engine & orchestration
-│   ├── providers/         # OpenAI, Anthropic, Groq, Ollama, etc.
-│   ├── tools/             # verilog, git, docs, shell, etc.
-│   ├── utils/             # caching, config, helpers
-│   └── cli.py             # Main Typer/Click interface
-├── prompts/               # Curated system prompts
-├── config/
-│   └── config.yaml        # User configuration
-├── tests/
-├── assets/
-├── .env.example
-├── pyproject.toml
-└── README.md
-```
-
-Fully modular — add new providers or tools in minutes.
-
-## Installation
-
-```bash
-# Recommended
-pipx install cli-genius
-
-# Or with pip
-pip install cli-genius
-
-# From source (latest features)
-git clone https://github.com/yourusername/cli-genius.git
+<div align="center"><!-- PROJECT LOGO & TITLE -->⚡ ℂ𝕃𝕀-𝔾𝔼ℕ𝕀𝕌𝕊 ⚡The Ultimate AI-Powered Terminal Companion<!-- ASCII ART BANNER -->      ▄████▄   ██▓     ██▓      ▄████  ▓█████  ███▄    █  ██▓ █    ██   ██████ 
+     ▒██▀ ▀█  ▓██▒    ▓██▒     ██▒ ▀█▒ ▓█   ▀  ██ ▀█   █ ▓██▒ ██  ▓██▒▒██    ▒ 
+     ▒▓█    ▄ ▒██░    ▒██░    ▒██░▄▄▄░ ▒███   ▓██  ▀█ ██▒▒██▒▓██  ▒██░░ ▓██▄   
+     ▒▓▓▄ ▄██▒▒██░    ▒██░    ░▓█  ██▓ ▒▓█  ▄ ▓██▒  ▐▌██▒░██░▓▓█  ░██░  ▒   ██▒
+     ▒ ▓███▀ ░░██████▒░██████▒░▒▓███▀▒ ░▒████▒▒██░   ▓██░░██░▒▒█████▓ ▒██████▒▒
+     ░ ░▒ ▒  ░░ ▒░▓  ░░ ▒░▓  ░ ░▒   ▒  ░░ ▒░ ░░ ▒░   ▒ ▒ ░▓  ░▒▓▒ ▒ ▒ ▒ ▒▓▒ ▒ ░
+       ░  ▒   ░ ░ ▒  ░░ ░ ▒  ░  ░   ░   ░ ░  ░░ ░░   ░ ▒░ ▒ ░░░▒░ ░ ░ ░ ░▒  ░ ░
+     ░          ░ ░     ░ ░   ░ ░   ░     ░      ░   ░ ░  ▒ ░ ░░░ ░ ░ ░  ░  ░  
+     ░ ░          ░  ░    ░  ░      ░     ░  ░         ░  ░     ░           ░  
+     ░                                                                           
+<!-- BADGES -->🚀 Bring ChatGPT-Level Intelligence Directly to Your Terminal 🚀Code • Debug • Refactor • Analyze • Automate Installation  •  Features  •  Usage  •  Architecture  •  Roadmap </div>🔮 OverviewCli-Genius is not just a tool; it's your AI pair programmer living inside the terminal. Built with Python and supercharged by Large Language Models (LLMs), it serves as a bridge between your command line and limitless coding intelligence.Whether you are a Web Developer fixing a React bug, a Data Scientist analyzing scripts, or an Embedded Systems Engineer writing SystemVerilog, cli-genius optimizes your workflow by 10x."Stop switching context between your IDE and the browser. The answer is right there in your terminal."⚔️ Features Arsenal<div align="center">Core DevelopmentHardware & VLSIProductivity & Ops🐍 Code GenerationWrite complete scripts in any language instantly.🔌 Verilog/SV GenGenerate hardware modules & testbenches.📂 Project InitScaffold boilerplates for any stack.🐞 Smart DebuggingPaste errors, get fixes and explanations.📄 Datasheet SummaryExtract pinouts & specs from text.📝 Auto-CommitsGenerate semantic git commit messages.♻️ RefactoringOptimize code for speed and readability.⏱️ Timing AnalysisAI suggestions for path optimization.🐧 Linux AssistantTranslate natural language to shell commands.🔍 Code ExplanationUnderstand legacy codebases line-by-line.📊 FSM GenerationDesign Finite State Machines via text.📚 Doc-GenAuto-generate docstrings and READMEs.</div>🏗️ System ArchitectureWe believe in transparency. Here is how Cli-Genius processes your thoughts into code:graph LR
+    A[🧑‍💻 You] -->|Natural Language Command| B(CLI Parser 📟)
+    B --> C{🧠 AI Engine}
+    C -->|Context Retrieval| D[🗄️ Project Context]
+    C -->|Prompt Engineering| E[🤖 LLM API]
+    E -->|Raw Response| C
+    C -->|Code Formatting| F[✨ Output Renderer]
+    F -->|Colored Syntax| A
+<details><summary><b>CLICK TO VIEW ASCII BLOCK DIAGRAM</b></summary>+---------------------------------------------------------------+
+|                        USER TERMINAL                          |
++---------------------------------------------------------------+
+           |                                     ^
+           v                                     |
++-----------------------+            +-----------------------+
+|   INPUT PARSER (ARG)  |            |   RICH OUTPUT UI      |
+|  (Click, Argparse)    |            |  (Rich, Pygments)     |
++-----------------------+            +-----------------------+
+           |                                     ^
+           v                                     |
++---------------------------------------------------------------+
+|                     CORE LOGIC CONTROLLER                     |
++---------------------------------------------------------------+
+           |               |                  |
+           v               v                  v
+  +----------------+  +----------+   +------------------+
+  | PROMPT MANAGER |  |  CACHE   |   | FILE SYSTEM OPS  |
+  +----------------+  +----------+   +------------------+
+           |
+           v
++---------------------------------------------------------------+
+|                    AI MODEL INTERFACE (API)                   |
+|           (OpenAI / Anthropic / Local LLMs)                   |
++---------------------------------------------------------------+
+</details>💾 InstallationGet started in seconds. Requires Python 3.8+.1️⃣ Clone the Repositorygit clone [https://github.com/yourusername/cli-genius.git](https://github.com/yourusername/cli-genius.git)
 cd cli-genius
-pip install -e .
-```
-
-## Quick Start
-
-```bash
-# Set your API key
-export OPENAI_API_KEY=sk-...
-
-# Or use a local model
-export OLLAMA_MODEL=llama3.2
-
-# Jump right in
-genius "Write a parameterized FIFO in SystemVerilog with async reset"
-genius "Explain this error and fix it" < error.log
-genius commit   # AI-powered commit message
-```
-
-## Usage Examples
-
-```bash
-genius "Create a Python CLI tool that monitors CPU temperature"
-cat main.py | genius "Why is this deadlocking?"
-genius "Generate a UVM testbench for my AXI4-Lite slave"
-genius explain "find . -type f -exec grep -l 'TODO' {} +"
-genius summary  # Get a full project overview instantly
-```
-
-## Configuration
-
-```yaml
-# ~/.config/cli-genius/config.yaml
-default_provider: openai
-model: gpt-4o
-temperature: 0.2
-max_tokens: 8000
-cache_enabled: true
-verilog_style: generic  # generic | intel | xilinx
-```
-
-Edit easily: `genius config edit`
-
-## Roadmap
-
-- [ ] Automatic model routing (fast vs cheap vs smart)
-- [ ] Local RAG for private repositories
-- [ ] VS Code / JetBrains plugin
-- [ ] Community plugin ecosystem
-- [ ] Voice input mode
-- [ ] GitHub bot integration
-
-## Contributing
-
-We love contributions! See [CONTRIBUTING.md](CONTRIBUTING.md) for details.
-
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feature/cool-thing`)
-3. Commit your changes
-4. Push and open a Pull Request
-
-## License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-**If Cli-Genius saves you time in the terminal, please ⭐ star this repo!**  
-Your support keeps the project alive and motivates new features.
-
-Made with passion for developers who breathe in `zsh` and dream in Verilog.
-```
+2️⃣ Set Up Virtual Environment (Recommended)python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+3️⃣ Install Dependenciespip install -r requirements.txt
+pip install .
+4️⃣ Configure API Keyexport OPENAI_API_KEY="your-secret-key-here"
+# Or set it interactively
+cli-genius config --key
+🎮 Usage GuideCli-Genius uses a simple verb-noun syntax.🐍 Generate CodeNeed a Python script to scrape a website?cli-genius gen python "Script to scrape data from a table on a website using BeautifulSoup"
+🐛 Debug ErrorsPaste the error log or point to a file.cli-genius debug server.py --error "ImportError: cannot import name 'xyz'"
+🔌 VLSI / Verilog GenerationGenerate a SystemVerilog module for a traffic light controller.cli-genius vlsi module "Traffic Light Controller with 3 states and a reset" --lang sv
+🐧 Linux Command HelperForget how to compress files?cli-genius shell "Compress the 'logs' folder into a tar.gz file"
+Output: tar -czvf logs.tar.gz logs/📝 Smart Commit MessagesStage your changes and let AI write the message.git add .
+cli-genius git-commit
+⚙️ ConfigurationCustomize your experience by editing ~/.cli-genius/config.yaml:model: "gpt-4-turbo"       # Options: gpt-4, gpt-3.5-turbo, claude-3
+temperature: 0.7           # Creativity level (0.0 - 1.0)
+theme: "dracula"           # Syntax highlighting theme
+syntax_highlight: true     # Enable/Disable color output
+hardware_mode: false       # Enable specialized VLSI prompts
+save_history: true         # Save conversation history
+🗺️ Project RoadmapThe future is bright. Here is what we are building next:[x] Core CLI Engine (Command parsing, Output rendering)[x] Code Generation Module (Python, JS, Rust, Go)[x] VLSI Support (Verilog, SystemVerilog, VHDL)[ ] Local LLM Support (Llama 3, Mistral integration)[ ] Voice Commands (Speech-to-Text input)[ ] IDE Plugins (VS Code, Vim extensions)[ ] Multi-File Analysis (Understand entire repo context)🤝 ContributingWe love open source! 💖Fork the ProjectCreate your Feature Branch (git checkout -b feature/AmazingFeature)Commit your Changes (git commit -m 'Add some AmazingFeature')Push to the Branch (git push origin feature/AmazingFeature)Open a Pull RequestSee CONTRIBUTING.md for detailed guidelines.📜 LicenseDistributed under the MIT License. See LICENSE for more information.<div align="center">🌟 Found this useful? 🌟Give a STAR to the repo! It helps us grow and build better tools.⭐ Star Repository<p align="center"><img src="https://www.google.com/search?q=https://capsule-render.vercel.app/api%3Ftype%3Dwaving%26color%3Dauto%26height%3D100%26section%3Dfooter" width="100%"/></p><sub>Designed with ❤️ by the Cli-Genius Team.</sub></div>
